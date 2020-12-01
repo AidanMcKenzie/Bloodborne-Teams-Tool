@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bloodborne Teams Tool';
+
+  myDataArray: string[] = ['Apple', 'Orange', 'Banana'];
 }
