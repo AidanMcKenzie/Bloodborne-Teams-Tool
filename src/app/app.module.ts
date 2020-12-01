@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './home/main-page.component';
+import { CharactersComponent } from './characters/characters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent
+    CharactersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
-export interface IProduct {
-    characterId: number;
+export interface Character {
+    id: number;
     name: string;
     player: string;
     imageUrl: string;
