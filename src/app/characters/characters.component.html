@@ -1,10 +1,8 @@
-<h2>Characters</h2>
-
 <div class="row">
   <!-- Column A -->
   <ul class="characters">
     <h2>Team A</h2>
-    <li *ngFor="let character of thisCharactersVariable">
+    <li *ngFor="let character of teamA">
       {{character.name}}
     </li>
   </ul>
@@ -12,7 +10,7 @@
   <!-- Column B -->
   <ul class="characters">
     <h2>Team B</h2>
-    <li *ngFor="let character of thisCharactersVariable">
+    <li *ngFor="let character of teamB">
       {{character.name}}
       <!-- <span> - {{character.player}}</span> -->
     </li>
@@ -21,7 +19,7 @@
   <!-- Column C -->
   <ul class="characters">
     <h2>Team C</h2>
-    <li *ngFor="let character of thisCharactersVariable">
+    <li *ngFor="let character of teamC">
       {{character.name}}
     </li>
   </ul>
@@ -32,4 +30,4 @@
         title="generate class" 
         style="margin:  0 auto;
                display: block;"
-        (click)="getShuffled()">Generate Teams</button>
+        (click)="getCharacters()">Generate Teams</button>

@@ -24,27 +24,30 @@ export class CharactersComponent implements OnInit {
 
   // On launch
   ngOnInit(): void {
-    this.getCharacters();
+    this.getTeams();
   }
 
   // Get characters from character service
   getCharacters(): void {
+    this.getTeams();
+  }
+
+  getTeams(): void {
+
+    /*let teamArray = [this.teamA, this.teamB, this.teamC];
+
+    for (let i = 0; i < teamArray.length; i++) {
+      this.characterService.getCharacters()
+      .subscribe(characters => teamArray[i] = characters.splice(0,3));
+    }*/
+
     this.characterService.getCharacters()
-        .subscribe(characters => this.thisCharactersVariable = characters);
-  }
+      .subscribe(characters => this.teamA = characters.splice(0,3));
 
-  getShuffled(): void {
-    this.characterService.splitTeams(charactersArray, 3)
-      .subscribe(characters => this.thisCharactersVariable = characters);
-  }
+      this.characterService.getCharacters()
+      .subscribe(characters => this.teamB = characters.splice(0,2));
 
-  getTeamA(): void {
-    this.characterService.splitTeams(charactersArray, 3)
-      .subscribe(characters => this.teamA = characters);
-  }
-
-  getTeamB(): void {
-    this.characterService.splitTeams(charactersArray, 3)
-      .subscribe(characters => this.thisCharactersVariable = characters);
+      this.characterService.getCharacters()
+      .subscribe(characters => this.teamC = characters.splice(0,2));
   }
 }

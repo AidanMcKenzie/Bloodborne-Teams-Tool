@@ -12,16 +12,20 @@ export class CharacterService {
 
   constructor() { }
 
+  // Accessed by Characters component
   getCharacters(): Observable<Character[]> {
+    let shuffledCharacters = this.shuffleCharacters(charactersArray);
+    return of(shuffledCharacters);
+  }
 
-    let newVar = this.shuffleCharacters(charactersArray);
-
-    return of(newVar);
+  getTeamA(): Character[] {
+    let shuffledCharacters = this.shuffleCharacters(charactersArray);
+    return shuffledCharacters;
   }
 
   // Shuffle the array of characters
-  shuffleCharacters(array) {
-    let currentIndex = array.length, temporaryValue, randomIndex;
+  shuffleCharacters(arrayOfCharacters) {
+    let currentIndex = arrayOfCharacters.length, temporaryValue, randomIndex;
   
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
@@ -31,19 +35,19 @@ export class CharacterService {
       currentIndex -= 1;
   
       // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+      temporaryValue = arrayOfCharacters[currentIndex];
+      arrayOfCharacters[currentIndex] = arrayOfCharacters[randomIndex];
+      arrayOfCharacters[randomIndex] = temporaryValue;
     }
   
-    return array;
+    return arrayOfCharacters;
   }
 
-  
-  splitTeams(characters, teams_count: number) {
-    let teams: Character[] = [];
+
+  splitTeams(arrayOfCharacters, teams_count: number) {
+    let teams = [];
     while (teams_count > 0) {
-      teams.push(characters.splice(0, Math.floor(characters.length/teams_count)))
+      teams.push(arrayOfCharacters.splice(0, Math.floor(arrayOfCharacters.length/teams_count)))
       teams_count--;
     }
 

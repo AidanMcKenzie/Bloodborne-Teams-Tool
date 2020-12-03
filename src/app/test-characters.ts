@@ -37,5 +37,11 @@ export const charactersArray: Character[] =
         "name": "BT's Character",
         "player": "BT",
         "imageUrl": "assets/images/test.png"
-    }
+    },
+    {
+      "id": 7,
+      "name": "BP's Character",
+      "player": "BP",
+      "imageUrl": "assets/images/test.png"
+  }
   ];
