@@ -1,6 +1,6 @@
 import { Character } from './character';
 
-export const CHARACTERS: Character[] =
+export const charactersArray: Character[] =
 [
     {
       "id": 1,

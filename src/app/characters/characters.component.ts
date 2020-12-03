@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from '../character';
-import { CHARACTERS } from '../test-characters';
-
+import { charactersArray } from '../test-characters';
+import { CharacterService } from '../character.service';
 
 
 @Component({
@@ -11,17 +11,40 @@ import { CHARACTERS } from '../test-characters';
 })
 export class CharactersComponent implements OnInit {
 
-  characters = CHARACTERS;
+  thisCharactersVariable: Character[];
+
+  teamA: Character[];
+
+  teamB: Character[];
+
+  teamC: Character[];
 
   
+  constructor(private characterService: CharacterService) { }
 
-
-  constructor() { }
-
+  // On launch
   ngOnInit(): void {
+    this.getCharacters();
   }
 
-  generateTeams(): void {
+  // Get characters from character service
+  getCharacters(): void {
+    this.characterService.getCharacters()
+        .subscribe(characters => this.thisCharactersVariable = characters);
+  }
 
+  getShuffled(): void {
+    this.characterService.splitTeams(charactersArray, 3)
+      .subscribe(characters => this.thisCharactersVariable = characters);
+  }
+
+  getTeamA(): void {
+    this.characterService.splitTeams(charactersArray, 3)
+      .subscribe(characters => this.teamA = characters);
+  }
+
+  getTeamB(): void {
+    this.characterService.splitTeams(charactersArray, 3)
+      .subscribe(characters => this.thisCharactersVariable = characters);
   }
 }

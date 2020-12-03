@@ -4,25 +4,25 @@
   <!-- Column A -->
   <ul class="characters">
     <h2>Team A</h2>
-    <li *ngFor="let character of characters">
-      <span class="badge">{{character.id}}</span> {{character.name}}
+    <li *ngFor="let character of thisCharactersVariable">
+      {{character.name}}
     </li>
   </ul>
   
   <!-- Column B -->
   <ul class="characters">
     <h2>Team B</h2>
-    <li *ngFor="let character of characters">
-      <span class="badge">{{character.id}}</span> {{character.name}}
-      <span> - {{character.player}}</span>
+    <li *ngFor="let character of thisCharactersVariable">
+      {{character.name}}
+      <!-- <span> - {{character.player}}</span> -->
     </li>
   </ul>
   
   <!-- Column C -->
   <ul class="characters">
     <h2>Team C</h2>
-    <li *ngFor="let character of characters">
-      <span class="badge">{{character.id}}</span> {{character.name}}
+    <li *ngFor="let character of thisCharactersVariable">
+      {{character.name}}
     </li>
   </ul>
 </div>
@@ -30,4 +30,6 @@
 <button mat-raised-button color="primary"
         class="generate" 
         title="generate class" 
-        (click)="generateTeams()">Generate Teams</button>
+        style="margin:  0 auto;
+               display: block;"
+        (click)="getShuffled()">Generate Teams</button>
