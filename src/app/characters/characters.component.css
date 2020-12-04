@@ -16,6 +16,10 @@
     color:#8A8660;
   }
 
+  .characterNames {
+    font-size: 110%;
+  }
+
   .players {
     font-size: 80%;
     margin: -1px 0 0 0;

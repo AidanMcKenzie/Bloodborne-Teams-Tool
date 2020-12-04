@@ -5,43 +5,43 @@ export const charactersArray: Character[] =
     {
       "id": 1,
       "name": "AM's Character",
-      "player": "AM",
+      "player": "Aidan McKenzie",
       "imageUrl": "assets/images/test.png"
     },
     {
       "id": 2,
-      "name": "MB's Character",
-      "player": "MB",
+      "name": "Hogan Helgason",
+      "player": "Michael Barton",
       "imageUrl": "assets/images/test.png"
     },
     {
       "id": 3,
-      "name": "AJ's Character",
-      "player": "AJ",
+      "name": "Scatamere Felde",
+      "player": "Aaron Johnson",
       "imageUrl": "assets/images/test.png"
     },
     {
       "id": 4,
       "name": "SE's Character",
-      "player": "SE",
+      "player": "Steven Eddie",
       "imageUrl": "assets/images/test.png"
     },
     {
       "id": 5,
       "name": "CM's Character",
-      "player": "CM",
+      "player": "Ciaran Milne",
       "imageUrl": "assets/images/test.png"
     },
     {
         "id": 6,
         "name": "BT's Character",
-        "player": "BT",
+        "player": "Brandon Turner",
         "imageUrl": "assets/images/test.png"
     },
     {
       "id": 7,
       "name": "BP's Character",
-      "player": "BP",
+      "player": "Blair Parker",
       "imageUrl": "assets/images/test.png"
   }
   ];

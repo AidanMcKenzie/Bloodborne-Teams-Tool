@@ -4,6 +4,7 @@ h1 {
     font-family: Georgia, Arial, Helvetica, sans-serif;
     font-size: 250%;
     text-align: center;
+    padding: 0.2em 0 0.2em 0;
   }
   h2, h3 {
     color: rgb(255, 255, 255);
