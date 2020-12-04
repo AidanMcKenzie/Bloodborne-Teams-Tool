@@ -14,16 +14,26 @@ h1 {
     margin: 2em;
   }
   body, input[type="text"], button {
-    color:#96815b;
     font-family: Georgia, Cambria;
   }
   /* everywhere else */
   * {
     font-family: Georgia, Arial, Helvetica, sans-serif;
   }
-html, body { height: 100%; }
+
+  html, body { 
+    height: 100%; 
+  }
+
 body { 
   margin: 0; 
   font-family: Georgia, Roboto, "Helvetica Neue", sans-serif;
-  background-image: url(.\assets\images\background.png);
-  background-color: #444; }
+  background-image: url(\assets\images\background.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #444; 
+}
+
+img.background {
+  filter: brightness(200%);
+}
