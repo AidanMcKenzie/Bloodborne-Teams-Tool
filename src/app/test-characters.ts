@@ -22,7 +22,7 @@ export const charactersArray: Character[] =
     },
     {
       "id": 4,
-      "name": "SE's Character",
+      "name": "Garold Senior",
       "player": "Steven Eddie",
       "imageUrl": "assets/images/test.png"
     },

@@ -7,6 +7,17 @@
 
   .app-characters { text-align: center }
 
+  .characterNames {
+    font-size: 110%;
+    padding: 0.1em 0px 0px 0.5em;
+    margin-top: 1px;
+  }
+
+  .players {
+    font-size: 73%;
+    margin: -1px 0 0 0;
+  }
+
   .characters {
     margin-left: auto;
     margin-right: auto;
@@ -16,32 +27,16 @@
     color:#8A8660;
   }
 
-  .characterNames {
-    font-size: 110%;
-    padding: 0.1em 0px 0px 0.5em;
-    margin-top: 1px;
-  }
-
-  .players {
-    font-size: 80%;
-    margin: -1px 0 0 0.6em;
-  }
+  /* Container */
   .characters li {
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: #1E1E1E;
-    margin: -4px 0.5em 0.4em 0.5em;
-    
-    /*height: 3em;*/
-    border: 1px solid #5e5a51;
-    border-radius: 1px;
-    text-shadow: 1px 1px 2px #000000;
+    margin: -4px 0.5em 0.5em 0.5em;
   }
+
   .characters li:hover {
-    color: #9C9996;
-    background-color: #343A48;
-    left: .1em;
+
   }
   .characters li.selected {
     background-color: #CFD8DC;
@@ -51,6 +46,21 @@
     background-color: #BBD8DC;
     color: white;
   }
+
+  .characters .card {
+    overflow: hidden;
+    background-color: #1E1E1E;
+    border: 1px solid #5e5a51;
+    border-radius: 1px;
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  .characters .card:hover {
+    color: #9C9996;
+    background-color: #343A48;
+    /* left: .1em; */
+  }
+
   .characters .badge {
     display: inline-block;
     font-size: small;
@@ -67,8 +77,9 @@
   }
 
   .avatar {
-    border: 1px solid #5e5a51;
-    border-radius: 1px;
-    width: 20%;
+    border: 1px solid #292828;
+    width: 22%;
     margin-left: 0.2em;
+    margin-right: 0.2em;
+    float:left;
   }
