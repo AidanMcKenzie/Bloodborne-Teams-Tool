@@ -34,7 +34,7 @@ export const charactersArray: Character[] =
     },
     {
         "id": 6,
-        "name": "BT's Character",
+        "name": "Schommer Schate",
         "player": "Brandon Turner",
         "imageUrl": "assets/images/test.png"
     },
