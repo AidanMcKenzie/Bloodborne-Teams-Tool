@@ -16,7 +16,7 @@ export const charactersArray: Character[] =
     },
     {
       "id": 3,
-      "name": "Scatamere Felde",
+      "name": "Scatamere Fredle",
       "player": "Aaron Johnson",
       "imageUrl": "assets/images/test.png"
     },

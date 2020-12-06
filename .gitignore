@@ -45,3 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 src/app/test-characters.ts
+src/app/test-characters.ts

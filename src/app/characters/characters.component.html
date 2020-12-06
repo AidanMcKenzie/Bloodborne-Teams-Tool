@@ -3,8 +3,10 @@
   <ul class="characters">
     <h2>Team A</h2>
     <li *ngFor="let character of teamA">
-      <div class="characterNames">{{character.name}}</div>
-      <div class="players">{{character.player}}</div>
+      <!-- <img class="avatar" src="assets/images/hunters-mark.png" alt="Avatar"> -->
+      <span class="characterNames">{{character.name}}
+        <div class="players">{{character.player}}</div>
+      </span>
     </li>
   </ul>
   
@@ -12,8 +14,9 @@
   <ul class="characters">
     <h2>Team B</h2>
     <li *ngFor="let character of teamB">
-      <div class="characterNames">{{character.name}}</div>
-      <div class="players">{{character.player}}</div>
+      <span class="characterNames">{{character.name}}
+        <div class="players">{{character.player}}</div>
+      </span>
     </li>
   </ul>
   
@@ -21,8 +24,9 @@
   <ul class="characters">
     <h2>Team C</h2>
     <li *ngFor="let character of teamC">
-      <div class="characterNames">{{character.name}}</div>
-      <div class="players">{{character.player}}</div>
+      <span class="characterNames">{{character.name}}
+        <div class="players">{{character.player}}</div>
+      </span>
     </li>
   </ul>
 </div>
