@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Character } from './character';
-import { charactersArray } from './test-characters';
+import { charactersArray } from './characters-list';
 
 @Injectable({
   providedIn: 'root',
