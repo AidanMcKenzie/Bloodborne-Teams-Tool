@@ -51,7 +51,7 @@
     overflow: hidden;
     background-color: #1E1E1E;
     border: 1px solid #5e5a51;
-    border-radius: 1px;
+    border-radius: 0px;
     text-shadow: 1px 1px 2px #000000;
     width: 180px;
   }
@@ -73,7 +73,6 @@
     top: -4px;
     height: 1.8em;
     margin-right: .8em;
-    border-radius: 4px 0 0 4px;
   }
 
   .avatar {
