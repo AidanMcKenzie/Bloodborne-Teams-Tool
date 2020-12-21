@@ -1,6 +1,10 @@
+  h1 {
+    color: #bdbca6;
+  }
+  
   h2 { 
     text-align: center;
-    color:#8A8660;
+    color:#A3885D;
     text-shadow: 1px 1px 2px #000000;
     font-size: 180%;
   }
@@ -59,6 +63,8 @@
   .characters .card:hover{
     color: #9C9996;
     background-color: #343A48;
+    border: 1px solid #BCAD72;
+    border-radius: 0px;
   }
 
   .characters .badge {
@@ -82,4 +88,22 @@
     margin-left: 0.2em;
     margin-right: 0.2em;
     float:left;
+  }
+
+  .generate{
+    top: 2em;
+    color: #bdbca6;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    display: block;
+    background-color: #1E1E1E;
+    border: 1px solid #5e5a51;
+    border-radius: 0px;
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  .generate:hover{
+    background-color: #343A48;
+    border: 1px solid #BCAD72;
+    border-radius: 0px;
   }

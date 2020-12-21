@@ -26,10 +26,16 @@ export class CharactersComponent implements OnInit {
     this.getTeams();
   }
 
+  refreshPage(): void {
+    window.location.reload();
+  }
+
   // Get characters from character service
   getCharacters(): void {
     this.getTeams();
   }
+
+  
 
   getTeams(): void {
 
