@@ -4,7 +4,7 @@ export const charactersArray: Character[] =
 [
     {
       "id": 1,
-      "name": "AM's Character",
+      "name": "Splatricia Wankz",
       "player": "Aidan McKenzie"
     },
     {
@@ -24,7 +24,7 @@ export const charactersArray: Character[] =
     },
     {
       "id": 5,
-      "name": "CM's Character",
+      "name": "Phlumpy Phrectum",
       "player": "Ciaran Milne"
     },
     {
@@ -34,7 +34,7 @@ export const charactersArray: Character[] =
     },
     {
       "id": 7,
-      "name": "BP's Character",
+      "name": "Hector Bumpldick",
       "player": "Blair Parker"
     }
   ];
