@@ -20,7 +20,7 @@ export const charactersArray: Character[] =
     {
       "id": 4,
       "name": "Garold Senior",
-      "player": "Steven Eddie"
+      "player": "Stevie Eddie"
     },
     {
       "id": 5,
