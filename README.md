@@ -8,12 +8,12 @@ This tool/web app is used alongside a playthrough of Bloodborne in order to auto
 
 ## Features
 The tool contains the following features:	
-•	Assign all seven players’ characters to one of two teams (Team A and Team B)
-•	Clicking the 'Generate Teams' button provides the user with a new team which is sufficiently different from the last
-•	Displays the names of the Bloodborne characters that have been created by the players
-•	Displays the names of the players alongside their character’s name
-•	Display images taken from the game of the players’ characters alongside the character name
-•	The visual design of the tool resembles that of the game
+* Assign all seven players’ characters to one of two teams (Team A and Team B)
+* Clicking the 'Generate Teams' button provides the user with a new team which is sufficiently different from the last
+* Displays the names of the Bloodborne characters that have been created by the players
+* Displays the names of the players alongside their character’s name
+* Display images taken from the game of the players’ characters alongside the character name
+* The visual design of the tool resembles that of the game
 
 ## Technologies
 This tool is built using Angular, and is a simple single-page web app.
